@@ -4,10 +4,6 @@ import icon from "../../constants/icon.js";
 import Button from "../../components/button/button.jsx";
 
 function Appointment(props) {
-
-    //2024-11-15T08:30:00
-    const dt = new Date(props.bookingDate + "T" + props.bookingHour);
-
     return <View style={styles.appointment}>
         <Text style={styles.name}>
             {props.service} - {props.doctor}
@@ -22,7 +18,7 @@ function Appointment(props) {
                     <Image style={styles.icon}
                         source={icon.calendar} />
                     <Text style={styles.bookingDate}>
-                        {dt.toLocaleDateString()}
+                        15/10/2024
                     </Text>
                 </View>
 
@@ -30,15 +26,14 @@ function Appointment(props) {
                     <Image style={styles.icon}
                         source={icon.clock} />
                     <Text style={styles.bookingHour}>
-                        {props.bookingHour}h
+                        08:30h
                     </Text>
                 </View>
 
             </View>
 
             <View style={styles.containerButton}>
-                <Button text="Cancelar Reserva" theme="danger"
-                    onPress={() => props.onPress(props.id_appointment)} />
+                <Button text="Cancelar Reserva" theme="danger" />
             </View>
 
         </View>

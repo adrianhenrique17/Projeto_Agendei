@@ -20,14 +20,4 @@ async function Inserir(req, res) {
     res.status(201).json(appointment);
 }
 
-async function Excluir(req, res) {
-
-    const id_user = req.id_user;
-    const id_appointment = req.params.id_appointment;
-
-    const appointment = await serviceAppointment.Excluir(id_user, id_appointment);
-
-    res.status(200).json(appointment);
-}
-
-export default { ListarByUser, Inserir, Excluir };
+export default { ListarByUser, Inserir };

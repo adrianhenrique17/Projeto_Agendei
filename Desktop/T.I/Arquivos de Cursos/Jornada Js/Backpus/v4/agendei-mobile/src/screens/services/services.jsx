@@ -1,63 +1,25 @@
-import { Alert, FlatList, Text, View, Image } from "react-native";
+import { FlatList, Text, View, Image } from "react-native";
 import { styles } from "./services.style.js";
+import { doctors_services } from "../../constants/data.js";
 import icon from "../../constants/icon.js";
 import Service from "../../components/service/service.jsx";
-import api from "../../constants/api.js";
-import { useEffect, useState } from "react";
 
-function Services(props) {
-
-    const id_doctor = props.route.params.id_doctor;
-    const name = props.route.params.name;
-    const specialty = props.route.params.specialty;
-    const iconDoctor = props.route.params.icon;
-
-    const [doctorsServices, SetDoctorServices] = useState([]);
-
-    function ClickService(id_service) {
-        props.navigation.navigate("schedule", {
-            id_doctor,
-            id_service
-        });
-    }
-
-    async function LoadServices() {
-        try {
-            const response = await api.get("/doctors/" + id_doctor + "/services");
-
-            if (response.data)
-                SetDoctorServices(response.data);
-
-
-        } catch (error) {
-            if (error.response?.data.error)
-                Alert.alert(error.response.data.error);
-            else
-                Alert.alert("Ocorreu um erro. Tente novamente mais tarde");
-        }
-    }
-
-    useEffect(() => {
-        LoadServices();
-    }, []);
-
+function Services() {
     return <View style={styles.container}>
 
         <View style={styles.banner}>
-            <Image source={iconDoctor == "M" ? icon.male : icon.female} />
-            <Text style={styles.name}>{name}</Text>
-            <Text style={styles.specialty}>{specialty}</Text>
+            <Image source={icon.female} />
+            <Text style={styles.name}>Heber</Text>
+            <Text style={styles.specialty}>Cardiologista</Text>
         </View>
 
 
-        <FlatList data={doctorsServices}
+        <FlatList data={doctors_services}
             keyExtractor={(serv) => serv.id_service}
             showsVerticalScrollIndicator={false}
             renderItem={({ item }) => {
-                return <Service id_service={item.id_service}
-                    description={item.description}
-                    price={item.price}
-                    onPress={ClickService} />
+                return <Service description={item.description}
+                    price={item.price} />
             }} />
     </View>
 }

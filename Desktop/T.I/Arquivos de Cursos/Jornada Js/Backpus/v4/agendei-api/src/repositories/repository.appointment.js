@@ -33,14 +33,4 @@ async function Inserir(id_user,
     return appointment[0];
 }
 
-async function Excluir(id_user, id_appointment) {
-
-    let sql = `delete from appointments 
-    where id_appointment=? and id_user=?`;
-
-    await query(sql, [id_appointment, id_user]);
-
-    return { id_appointment };
-}
-
-export default { Listar, Inserir, Excluir }
+export default { Listar, Inserir }
