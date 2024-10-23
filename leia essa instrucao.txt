@@ -1,0 +1,7 @@
+
+
+Antes de rodar os projetos, tanto a API quanto o Mobile,
+não esqueça de executar o "npm install" para o node
+recriar a pasta node_modules. OK?
+
+Abraço! ;)
