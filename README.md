@@ -19,6 +19,11 @@ A construção da API foi interessante pois vi que ela serve como um garçom par
 
 Aqui terminei de fazer o back-end da api fiz todas as linkagens do bd e estava tudo pronto foi uma parte mais logica.
 
+# Iniciado desenvolvimento web
+
+Inicio o desenvolvimento web do projeto para manutenções das reservas feitas no app, uma parte web voltada ao administradores para controle, inicie já o desenvolvimento 
+usando JS e react e HTML, usando a biblioteca do BOOTSTRAP, já inicie desenvolvendo as telas de login e cadastro e parte do layout de onde sera feito as manutenções de reservas, estou preparando todo os Front-end para logo depois ser aplicada a API que já esta criada e precisa somente só inserir ela.
+
 # Finalizando app e acessando dados da API
 
 Aqui e na construção do front do APP foi onde eu mais demorei, fiz todas as estruturas para cada botão funcionar, ativar as rolagens de telas , usei o metodo de sobre por para os abas internas e para as de registro usei o metodo de aba, foi bem dificil essa parte mas como a api estava pronta so fui inserindo ela no codigo e aplicando tudo, fazendo alguns ajustes na interface no app, e testando tudo , colocando mensagens de app, inserindo as veriaveis de email e senha , login e registro .
