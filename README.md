@@ -28,3 +28,7 @@ Fiz a parte de reservar os medicos, colocar cada especialidade cada preço, acer
 
 Inicio o desenvolvimento web do projeto para manutenções das reservas feitas no app, uma parte web voltada ao administradores para controle, inicie já o desenvolvimento 
 usando JS e react e HTML, usando a biblioteca do BOOTSTRAP, já inicie desenvolvendo as telas de login e cadastro e parte do layout de onde sera feito as manutenções de reservas, estou preparando todo os Front-end para logo depois ser aplicada a API que já esta criada e precisa somente só inserir ela.
+
+# Conectando Web com Api
+
+Então nessa etapa o Front-end já estava finalizado e eu só precisa usar minha api para inserir os dados do meu banco nas telas e fazer o processo de login e cadastro e demais funções que vou relatar agora. fiz o processo de realização do login e cadastro, pois essa aplicação web é para administradores, montei os logs de erros para logins errados e possiveis erros de servidores, e para o metodo de colocar duas senhas, tambem apresenta log de erro ao usuario, inseri metodo de proteção se o usuario so botar a url e os caminhos sem passar pelo login, ele indentifica que ta sem token e da logout. fiz o processo de mudar nome do usuario na sua tela, colocando o seu nome, fiz processo de desconectar para jogar a tela inicial, fiz processo de filtragem de informações pegadas do bd.
