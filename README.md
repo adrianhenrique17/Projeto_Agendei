@@ -32,3 +32,9 @@ usando JS e react e HTML, usando a biblioteca do BOOTSTRAP, já inicie desenvolv
 # Conectando Web com Api
 
 Então nessa etapa o Front-end já estava finalizado e eu só precisa usar minha api para inserir os dados do meu banco nas telas e fazer o processo de login e cadastro e demais funções que vou relatar agora. fiz o processo de realização do login e cadastro, pois essa aplicação web é para administradores, montei os logs de erros para logins errados e possiveis erros de servidores, e para o metodo de colocar duas senhas, tambem apresenta log de erro ao usuario, inseri metodo de proteção se o usuario so botar a url e os caminhos sem passar pelo login, ele indentifica que ta sem token e da logout. fiz o processo de mudar nome do usuario na sua tela, colocando o seu nome, fiz processo de desconectar para jogar a tela inicial, fiz processo de filtragem de informações pegadas do bd.
+
+# Finalizção
+
+Nas ultimas alterações do cogigo do projeto, fui acertando as coisas que faltavam, inserindo get e put e delete da tabela nas funcões do meu projeto, designando a parte de poder criar novas reservas, editar e deletar reservas, e também acertando os bugs que tiveram no codigo, e realizando a finalização estética da aplicação, certamente tem muitos campo e logicas que podem ser implementadas, como a versão final vai sair em sua V01, muitas coisas podem ser mudadas e implementadas no projeto. De maneira geral o projeto foi muito interessante por passar por Back-end e Front-end, muitos bugs e estresse vieram mais isso é normal, projeto muito interessante de muita experiencia.
+
+
